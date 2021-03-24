@@ -1,6 +1,7 @@
 import React from 'react';
 
 import SimpleFunctionalComponent from './components/SimpleFunctionalComponent';
+import SimpleClassComponent from './components/SimplmeClassComponent';
 
 import logo from './logo.svg';
 import './App.css';
@@ -11,6 +12,7 @@ const App = () => (
       <img src={logo} className="App-logo" alt="logo" />
       <p>Edit code and save to reload.</p>
       <SimpleFunctionalComponent value="some string value" />
+      <SimpleClassComponent value="another string value" />
       <a
         className="App-link"
         href="https://reactjs.org"
