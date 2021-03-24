@@ -1,28 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import { Provider } from 'react-redux';
+
+import configureStore from './store';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const rootEl = document.getElementById('root');
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  rootEl
-);
+const store = configureStore();
+
+const render = WrappedComponent =>
+  // eslint-disable-next-line react/no-render-return-value
+  ReactDOM.render(
+    <React.StrictMode>
+      <Provider store={store}>
+        <WrappedComponent />
+      </Provider>
+    </React.StrictMode>,
+    rootEl
+  );
+
+render(App);
 
 if (module.hot && process.env.NODE_ENV === 'development') {
   module.hot.accept('./App', async () => {
     const HotApp = await import('./App');
 
-    ReactDOM.render(
-      <React.StrictMode>
-        <HotApp />
-      </React.StrictMode>,
-      rootEl
-    );
+    render(HotApp);
   });
 }
 
