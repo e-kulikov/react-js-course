@@ -2,6 +2,7 @@ import React from 'react';
 
 import SimpleFunctionalComponent from './components/SimpleFunctionalComponent';
 import SimpleClassComponent from './components/SimplmeClassComponent';
+import Counter from './components/Counter';
 
 import logo from './logo.svg';
 import './App.css';
@@ -13,6 +14,7 @@ const App = () => (
       <p>Edit code and save to reload.</p>
       <SimpleFunctionalComponent value="some string value" />
       <SimpleClassComponent value="another string value" />
+      <Counter />
       <a
         className="App-link"
         href="https://reactjs.org"
