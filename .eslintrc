@@ -11,6 +11,7 @@
     "allowImportExportEverywhere": true
   },
   "rules": {
+    "import/prefer-default-export": "off",
     "prettier/prettier": "error",
     "no-unused-vars": "warn",
     "no-console": "off",

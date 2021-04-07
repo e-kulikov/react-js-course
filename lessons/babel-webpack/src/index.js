@@ -1,8 +1,6 @@
-const lambda = (...fns) => initialArg =>
-  fns.reduceRight((prev, fn) => fn(prev), initialArg);
+import { compose } from './modules/compose';
+import { add1 } from './modules/add1';
+import { pow4 } from './modules/pow4';
+import { multiply3 } from './modules/multiply3';
 
-const add1 = x => x + 1;
-const multiply3 = x => x * 3;
-const pow4 = x => x ** 4;
-
-console.log(lambda(multiply3, pow4, add1)(1));
+console.log(compose(multiply3, pow4, add1)(1));
