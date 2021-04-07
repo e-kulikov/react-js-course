@@ -4,7 +4,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: './src/index.js',
   output: {
-    filename: '[name].[hash].js',
+    filename: '[name].[fullhash:6].js',
     path: path.resolve(__dirname, 'dist'),
   },
   devtool: 'source-map',

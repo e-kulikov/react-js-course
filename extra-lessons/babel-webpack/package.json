@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src -d build",
-    "bundle": "webpack --mode development"
+    "bundle:dev": "webpack --mode development",
+    "bundle:prod": "webpack --mode production"
   },
   "author": "",
   "license": "ISC",
