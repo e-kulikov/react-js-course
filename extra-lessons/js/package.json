@@ -1,0 +1,23 @@
+{
+  "name": "babel-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d build",
+    "bundle:dev": "webpack --mode development",
+    "bundle:prod": "webpack --mode production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "7.13.14",
+    "@babel/core": "7.13.14",
+    "@babel/preset-env": "7.13.12",
+    "babel-loader": "8.2.2",
+    "html-webpack-plugin": "5.3.1",
+    "webpack": "5.30.0",
+    "webpack-cli": "4.6.0"
+  }
+}
