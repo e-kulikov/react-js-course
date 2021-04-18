@@ -25,7 +25,7 @@ foo = 123;
 
 Подробнее про числа можно узнать [тут](https://learn.javascript.ru/number).
 
-![важно](https://github.com/Xoxol/react-js-course/blob/45998a50d3bf585cb85f3396df4d0f43cc5388bb/important.png) Если сильно вчитываться в числа нет желания, то стоит почитать хотя бы про [неточные вычисления](https://learn.javascript.ru/number#netochnye-vychisleniya) и как с ними бороться.
+![важно](https://github.com/Xoxol/react-js-course/blob/320ec5b7a0074aa458b3bb3a3b035d658453c824/important.png) Если сильно вчитываться в числа нет желания, то стоит почитать хотя бы про [неточные вычисления](https://learn.javascript.ru/number#netochnye-vychisleniya) и как с ними бороться.
 
 ## BigInt
 **примитивный тип**
@@ -96,5 +96,6 @@ console.log(nil === null); // true
 
 По сути &mdash; словарь типа ключ-значение. К типу `object` в js относятся и массивы (а кроме того, объектом может выступать любой из перечисленных выше типов данных, если создавать его через конструктор соответствующего типа).
 
+![важно](https://github.com/Xoxol/react-js-course/blob/320ec5b7a0074aa458b3bb3a3b035d658453c824/important.png)
 Подробнее про объекты [тут](https://learn.javascript.ru/object).
 
